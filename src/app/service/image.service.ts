@@ -25,49 +25,49 @@ export class ImageService {
 const IMAGES = [
    {
     "id": 1,
-    "category": "mountains",
+    "category": "Rocks",
     "caption": "Something",
     "url": "./assets/img/Desert.jpg"
   },
    {
     "id": 2,
-    "category": "mountains",
+    "category": "Flowers",
     "caption": "Something",
     "url": "./assets/img/Chrysanthemum.jpg"
   },
   {
     "id": 3,
-    "category": "mountains",
+    "category": "Flowers",
     "caption": "Something",
     "url": "./assets/img/Hydrangeas.jpg"
   },
   {
     "id": 4,
-    "category": "mountains",
+    "category": "Animals",
     "caption": "Something",
     "url": "./assets/img/Jellyfish.jpg"
   },
   {
     "id": 5,
-    "category": "mountains",
+    "category": "Animals",
     "caption": "Something",
     "url": "./assets/img/Koala.jpg"
   },
   {
     "id": 6,
-    "category": "mountains",
+    "category": "Rocks",
     "caption": "Something",
     "url": "./assets/img/Lighthouse.jpg"
   },
   {
     "id": 7,
-    "category": "mountains",
+    "category": "Animals",
     "caption": "Something",
     "url": "./assets/img/Penguins.jpg"
   },
   {
     "id": 8,
-    "category": "mountains",
+    "category": "Flowers",
     "caption": "Something",
     "url": "./assets/img/Tulips.jpg"
   }

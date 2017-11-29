@@ -1,5 +1,9 @@
 <h2>{{photos}}</h2>
 <div class="row">
+  <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy=='all'" >All</button>
+  <button class="btn btn-lg btn-info" [class.active]="filterBy=='Rocks'" (click)="filterBy=='Rocks'">Rocks</button>
+  <button class="btn btn-lg btn-info" [class.active]="filterBy=='Flowers'" (click)="filterBy=='Flowers'">Flowers</button>
+  <button class="btn btn-lg btn-info" [class.active]="filterBy=='Animals'" (click)="filter()">Animals</button>
   <ul id="thumbnailsList">
     <li *ngFor="let image of visiblePhotos">
       <img src="{{image.url}}" class="image-thumbnail">
