@@ -1,2 +1,8 @@
 <h2>{{photos}}</h2>
-<app-image-detail></app-image-detail>
+<div class="row">
+  <ul id="thumbnailsList">
+    <li *ngFor="let image of visiblePhotos">
+      <img src="{{image.url}}" class="image-thumbnail">
+    </li>
+  </ul>
+</div>
