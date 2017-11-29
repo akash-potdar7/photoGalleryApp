@@ -9,6 +9,7 @@ import { HttpModule } from '@angular/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { ImageService } from './service/image.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ImageDetailComponent } from './image-detail/image-detail.component';
     HttpModule,
     AlertModule.forRoot()
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
