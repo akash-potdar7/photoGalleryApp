@@ -1,0 +1,14 @@
+nav {
+    font-family: 'Lato', sans-serif;
+    background-color: #424242;
+}
+
+.logo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    size: 1.5;
+}
+
+.active>a:hover{
+    background-color: #000000;
+}
