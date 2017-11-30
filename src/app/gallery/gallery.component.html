@@ -1,12 +1,12 @@
 <h2>{{photos}}</h2>
 <div class="row">
-  <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy=='all'" >All</button>
-  <button class="btn btn-lg btn-info" [class.active]="filterBy=='Rocks'" (click)="filterBy=='Rocks'">Rocks</button>
-  <button class="btn btn-lg btn-info" [class.active]="filterBy=='Flowers'" (click)="filterBy=='Flowers'">Flowers</button>
-  <button class="btn btn-lg btn-info" [class.active]="filterBy=='Animals'" (click)="filter()">Animals</button>
+
+  <input type="text" class="form-control" placeholder="Filter by category" [(ngModel)]='category' />
+  <alert type='info'>&nbsp;{{category}}</alert>
+
   <ul id="thumbnailsList">
-    <li *ngFor="let image of visiblePhotos">
-      <img src="{{image.url}}" class="image-thumbnail">
+    <li *ngFor="let image of (visiblePhotos | photosFilter: filterBy)">
+      <img src="{{image?.url}}" class="image-thumbnail" (click)="doThis(image)">
     </li>
   </ul>
 </div>

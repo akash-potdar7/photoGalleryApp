@@ -16,3 +16,7 @@ li {
     height: 150px;
     object-fit: cover;
 }
+
+.image-thumbnail:hover {
+    cursor: pointer;
+}

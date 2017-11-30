@@ -10,9 +10,9 @@ export class PhotosFilterPipe implements PipeTransform {
   }
 
   transform(items: any[], criteria: string): any {
-    console.log("Got in Pipe");
+    console.log("Got in Pipe, criteria= " + criteria);
     if(criteria === 'all') {
-      return 'all';
+      return items;
     } else {
        return items.filter(item=> {return item.category === criteria});
     }
