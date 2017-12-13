@@ -4,9 +4,11 @@
   <input type="text" class="form-control" placeholder="Filter by category" [(ngModel)]='category' />
   <alert type='info'>&nbsp;{{category}}</alert>
 
-  <ul id="thumbnailsList">
-    <li *ngFor="let image of (visiblePhotos | photosFilter: filterBy)">
-      <img src="{{image?.url}}" class="image-thumbnail" (click)="doThis(image)">
-    </li>
-  </ul>
+  <div class="well">
+    <ul id="thumbnailsList">
+      <li *ngFor="let image of (visiblePhotos | photosFilter: filterBy)">
+        <img src="{{image?.url}}" class="image-thumbnail" (click)="doThis(image)">
+      </li>
+    </ul>
+  </div>
 </div>

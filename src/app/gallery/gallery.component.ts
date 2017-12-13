@@ -3,6 +3,7 @@ import { ImageService } from '../image-detail/common/image.service';
 import { OnChanges, DoCheck } from '@angular/core/src/metadata/lifecycle_hooks';
 import { Pipe } from '@angular/core/src/metadata/directives';
 import { PhotosFilterPipe } from '../image-detail/common/photos-filter.pipe';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-gallery',
@@ -14,12 +15,10 @@ export class GalleryComponent implements OnInit, DoCheck, OnChanges {
 
   photos: string = 'Recent Photos';
   visiblePhotos: any = [];
-
   category: string;
-
   filterBy: string = 'all';
 
-  constructor(private imageService: ImageService) {
+  constructor(private imageService: ImageService, http: Http) {
     this.visiblePhotos = imageService.getImages();
   }
 
